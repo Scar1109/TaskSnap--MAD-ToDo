@@ -3,8 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg"
     android:orientation="horizontal"
-    android:padding="8dp">
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="8dp">
 
     <!-- Container for Task Details -->
     <LinearLayout
@@ -19,8 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins"
             android:paddingBottom="4dp"
             android:text="Task Title"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -30,8 +37,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins"
             android:paddingBottom="2dp"
             android:text="Task Description"
+            android:textColor="@color/white"
             android:textSize="14sp" />
 
         <!-- Task Due Date -->
@@ -39,9 +48,10 @@
             android:id="@+id/textViewDueDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:paddingBottom="2dp"
             android:text="Due Date"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="@color/secondary_color"
             android:textSize="14sp" />
 
         <!-- Task Due Time -->
@@ -49,9 +59,10 @@
             android:id="@+id/textViewDueTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
             android:paddingBottom="8dp"
             android:text="Due Time"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="@color/secondary_color"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -59,23 +70,24 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:gravity="bottom"
         android:orientation="vertical">
 
         <!-- Edit Task Button -->
         <ImageView
             android:id="@+id/buttonEdit"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:layout_margin="8dp"
-            app:srcCompat="@drawable/edit_12108481" />
+            app:srcCompat="@drawable/edit_btn" />
 
         <!-- Delete Task Button -->
         <ImageView
             android:id="@+id/buttonDelete"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:layout_margin="8dp"
-            app:srcCompat="@drawable/trash" />
+            app:srcCompat="@drawable/delete_btn" />
     </LinearLayout>
 
 </LinearLayout>

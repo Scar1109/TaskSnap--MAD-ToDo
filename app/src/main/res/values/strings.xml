@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Task Snap</string>
     <string name="add_task">Add New Task</string>
-    <string name="go_to_stop_watch">Go to Stop Watch</string>
+    <string name="go_to_stop_watch">Stop Watch</string>
     <string name="upcoming_tasks">Upcoming Task</string>
     <string name="no_tasks_available">No tasks available</string>
     <string name="ADDTASK">Add Task</string>
