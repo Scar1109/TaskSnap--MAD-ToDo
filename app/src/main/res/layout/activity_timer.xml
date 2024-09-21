@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/timer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:padding="16dp">
 
     <!-- TextView to display the stopwatch time -->
 
@@ -13,49 +15,52 @@
         android:id="@+id/textViewTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00:00:000"
-        android:textSize="40sp"
         android:layout_gravity="center"
-        android:padding="16dp" />
+        android:layout_marginBottom="10dp"
+        android:padding="16dp"
+        android:text="00:00:00:000"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="318dp"
+        android:layout_height="63dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/buttonStop"
+            android:layout_width="56dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/_stop_ic" />
+
+        <ImageView
+            android:id="@+id/buttonPause"
+            android:layout_width="56dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pause_ic" />
+
+        <ImageView
+            android:id="@+id/buttonStart"
+            android:layout_width="56dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/start_ic" />
+
+        <ImageView
+            android:id="@+id/buttonReset"
+            android:layout_width="56dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/restart_ic" />
+    </LinearLayout>
 
     <!-- Button to start the stopwatch -->
-    <Button
-        android:id="@+id/buttonStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/primary_color"
-        android:text="Start"
-        android:textColor="@android:color/white" />
 
     <!-- Button to pause the stopwatch -->
-    <Button
-        android:id="@+id/buttonPause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pause"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@android:color/white" />
 
     <!-- Button to stop the stopwatch -->
-    <Button
-        android:id="@+id/buttonStop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/primary_color"
-        android:text="Stop"
-        android:textColor="@android:color/white" />
 
     <!-- Button to reset the stopwatch -->
-    <Button
-        android:id="@+id/buttonReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@android:color/white" />
 
 </LinearLayout>
