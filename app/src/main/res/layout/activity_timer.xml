@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- TextView to display the stopwatch time -->
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00:000"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <!-- Button to start the stopwatch -->
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Start"
+        android:textColor="@android:color/white" />
+
+    <!-- Button to pause the stopwatch -->
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+    <!-- Button to stop the stopwatch -->
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Stop"
+        android:textColor="@android:color/white" />
+
+    <!-- Button to reset the stopwatch -->
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
