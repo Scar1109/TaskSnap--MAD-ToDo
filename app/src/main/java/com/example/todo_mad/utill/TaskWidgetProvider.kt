@@ -29,7 +29,7 @@ class TaskWidgetProvider : AppWidgetProvider() {
         val tasks = taskRepository.getAllTasks()
 
         // Get the most recent task
-        val mostRecentTask = tasks.maxByOrNull { task -> task.dueDate } // Adjust sorting criteria as needed
+        val mostRecentTask = tasks.maxByOrNull { task -> task.dueDate }
 
         // Display the most recent task or a default message if no tasks are available
         if (mostRecentTask != null) {
